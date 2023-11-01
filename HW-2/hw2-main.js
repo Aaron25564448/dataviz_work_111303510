@@ -31,10 +31,10 @@ for(let i=0;i<taichung_population.length;i++){
 }
 population2.text = population2.y;
 population2.textfont = {
-    color:'white',
+    color:'black',
     size:20
 }
-population2.visible = false;
+//population2.visible = false;
 
 let hw2_data = [];
 hw2_data.push(population1);
@@ -51,7 +51,7 @@ let hw2_layout = {
         title:'population(million people)'
     },
     title:'Kaohsiung population vs Taichung population',
-    updatemenus:[
+   /*updatemenus:[
         {
             y:1.2,
             x:0.1,
@@ -74,7 +74,7 @@ let hw2_layout = {
                 }
             ]
         }
-    ]
+    ]*/
 };
 
 Plotly.newPlot(hw2_Graph, hw2_data, hw2_layout);
